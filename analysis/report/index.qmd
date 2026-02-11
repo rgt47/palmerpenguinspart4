@@ -7,7 +7,7 @@ categories: [R Programming, Data Science, Statistical Computing, Model Diagnosti
 description: "Part 4 of our 5-part series focusing on rigorous diagnostic procedures, assumption checking, and biological interpretation of our penguin models"
 image: "../../images/posts/penguin-hero.jpg"
 document-type: "blog"
-draft: true
+draft: false
 execute:
   echo: true
   warning: false
@@ -359,6 +359,17 @@ Ready for the grand finale? Head to [Part 5: Random Forest vs Linear Models](../
 5. [Part 5: Random Forest vs Linear Models](../palmer_penguins_part5/)
 :::
 
-*Have questions about model diagnostics or interpretation? Feel free to reach out on [Twitter](https://twitter.com/yourhandle) or [LinkedIn](https://linkedin.com/in/yourprofile). You can also find the complete code for this series on [GitHub](https://github.com/yourusername/palmer-penguins-series).*
+# Let's Connect
 
-**About the Author:** [Your name] is a [your role] specializing in statistical ecology and model validation. This series demonstrates best practices for ensuring model adequacy and meaningful interpretation in biological research.
+- **GitHub**: [rgt47](https://github.com/rgt47)
+- **Twitter/X**: [@rgt47](https://twitter.com/rgt47)
+- **LinkedIn**: [Ronald Glenn Thomas](https://linkedin.com/in/rgthomaslab)
+- **Email**: [Contact through website](https://rgtlab.org/contact)
+
+I would enjoy hearing from you if you:
+
+- Spot an error or have a correction
+- Have a better approach to any of these analyses
+- Want to discuss statistical methodology
+- Have questions about the Palmer Penguins dataset
+- Just want to connect and talk about data science
