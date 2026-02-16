@@ -126,10 +126,7 @@ I am documenting my learning process here. If you
 spot errors or have better approaches, please let me
 know.
 
-![Atmospheric Antarctic
-scene](media/images/ambiance1.jpg){.img-fluid
-fig-alt="Wide view of Antarctic terrain with ice
-formations and open sky"}
+![](media/images/r-logo.png){.img-fluid width=30% fig-align="center"}
 
 *Visual interlude before the technical content.*
 
