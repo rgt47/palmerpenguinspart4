@@ -6,7 +6,7 @@ subtitle: >
   model tells us
 author: "Ronald G. Thomas"
 date: "2025-01-04"
-categories:
+categories: [r, palmer-penguins, model-diagnostics, regression]
   [R Programming, Data Science, Statistical Computing]
 description: >
   I did not really know whether my regression model
