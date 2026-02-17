@@ -8,9 +8,9 @@ author: "Ronald G. Thomas"
 date: "2025-01-04"
 categories: [r, palmer-penguins, model-diagnostics, regression]
 description: >
-  I did not really know whether my regression model
-  was trustworthy until I ran systematic diagnostic
-  checks on linearity, normality, and influence.
+  Verifying regression model trustworthiness through
+  systematic diagnostic checks on linearity, normality,
+  and influence.
 image: "media/images/hero.jpg"
 document-type: "blog"
 draft: true
@@ -58,50 +58,48 @@ penguin morphometrics:
 
 # Introduction
 
-I did not really know whether my regression model was
-trustworthy until I ran systematic diagnostic checks.
-In Part 3, cross-validation confirmed that the
-species-aware linear model generalises well, with a
-cross-validated R-squared of approximately 0.86. But
-good predictive performance does not guarantee that
-the model's assumptions are satisfied. A model can
-produce accurate predictions for the wrong reasons if
-the underlying assumptions are violated.
+Is the regression model trustworthy? In Part 3,
+cross-validation confirmed that the species-aware
+linear model generalises well, with a cross-validated
+R-squared of approximately 0.86. But good predictive
+performance does not guarantee that the model's
+assumptions are satisfied. A model can produce
+accurate predictions for the wrong reasons if the
+underlying assumptions are violated.
 
-The situation I faced is common in applied statistics:
-the summary output looks encouraging, the
-cross-validation numbers are solid, but the analyst
-has not yet verified that the mathematical
-assumptions justifying those numbers actually hold.
-Residual analysis, normality tests, and influence
-diagnostics are the tools that distinguish a model
-that happens to work from one that is statistically
-sound.
+The situation is common in applied statistics: the
+summary output looks encouraging, the cross-validation
+numbers are solid, but the analyst has not yet
+verified that the mathematical assumptions justifying
+those numbers actually hold. Residual analysis,
+normality tests, and influence diagnostics are the
+tools that distinguish a model that happens to work
+from one that is statistically sound.
 
-In this post I walk through the four classical
-regression assumptions, check each with both visual
-and formal tests, identify influential observations,
-and interpret the model coefficients in biological
-terms.
+This post walks through the four classical regression
+assumptions, checks each with both visual and formal
+tests, identifies influential observations, and
+interprets the model coefficients in biological terms.
 
 ## Motivations
 
-- I wanted to verify that the statistical guarantees
-  of ordinary least squares (unbiased coefficients,
+The following considerations motivated this analysis:
+
+- Verifying that the statistical guarantees of
+  ordinary least squares (unbiased coefficients,
   valid p-values, correct confidence intervals)
-  actually apply to my fitted model.
-- I was concerned that a few unusually large or small
-  penguins might be driving the regression results.
-- I needed to confirm that the residuals showed no
-  systematic patterns before reporting the model's
-  confidence intervals.
-- I had never run a full set of formal diagnostic
-  tests (Shapiro-Wilk, Breusch-Pagan, Durbin-Watson)
-  on ecological data and wanted to learn the workflow.
-- I wanted to understand the biological meaning of
-  each coefficient, not just its statistical
-  significance.
-- I was keen to determine whether removing influential
+  actually apply to the fitted model.
+- Concern that a few unusually large or small penguins
+  might be driving the regression results.
+- Confirming that the residuals show no systematic
+  patterns before reporting the model's confidence
+  intervals.
+- Learning the workflow for running a full set of
+  formal diagnostic tests (Shapiro-Wilk, Breusch-Pagan,
+  Durbin-Watson) on ecological data.
+- Understanding the biological meaning of each
+  coefficient, not just its statistical significance.
+- Determining whether removing influential
   observations would materially change the
   conclusions from Parts 2 and 3.
 
@@ -121,9 +119,8 @@ terms.
    into biologically meaningful statements about
    penguin morphometrics.
 
-I am documenting my learning process here. If you
-spot errors or have better approaches, please let me
-know.
+Errors and better approaches are welcome; see the
+Feedback section at the end.
 
 ![](media/images/r-logo.png){.img-fluid width=30% fig-align="center"}
 
@@ -886,24 +883,15 @@ quarto render index.qmd
 sessionInfo()
 ```
 
-# Let's Connect
+# Feedback
 
-- **GitHub:**
-  [rgt47](https://github.com/rgt47)
-- **Twitter/X:**
-  [@rgt47](https://twitter.com/rgt47)
-- **LinkedIn:**
-  [Ronald Glenn Thomas](https://linkedin.com/in/rgthomaslab)
-- **Email:**
-  [rgtlab.org/contact](https://rgtlab.org/contact)
+Feedback is welcome for:
 
-I would enjoy hearing from you if:
-
-- You spot an error or a better approach to any of
-  the code in this post.
-- You have suggestions for topics you would like to
-  see covered.
-- You want to discuss R programming, data science, or
-  reproducible research.
-- You have questions about anything in this tutorial.
-- You just want to say hello and connect.
+- Errors or better approaches to any of the code in
+  this post
+- Suggestions for topics to cover in future posts
+- Discussion of model diagnostics or regression
+  assumption testing
+- Questions about anything in this tutorial
+- General discussion of statistical modelling for
+  ecological data
