@@ -1,9 +1,6 @@
 ---
 title: "Palmer Penguins Part 4: Model Diagnostics and
   Interpretation"
-subtitle: >
-  Verifying assumptions and understanding what the
-  model tells us
 author: "Ronald 'Ryy' G. Thomas"
 date: "2025-01-04"
 categories: [r, regression, model-selection]
@@ -29,7 +26,7 @@ shoreline](media/images/hero.jpg){.img-fluid
 width=80%
 fig-alt="Penguins standing along an Antarctic
 shoreline with waves and rocky terrain in the
-background"}
+background" fig-align="center"}
 
 *Palmer Penguins series, Part 4. Photo used under
 open licence.*
