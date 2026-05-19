@@ -32,7 +32,7 @@ background" fig-align="center"}
 open licence.*
 
 ::: {.callout-note}
-**Palmer Penguins Series** -- This is part 4 of 5:
+**Palmer Penguins Series:** This is part 4 of 5:
 [Part 1](/posts/08-palmerpenguinspart1/) |
 [Part 2](/posts/09-palmerpenguinspart2/) |
 [Part 3](/posts/10-palmerpenguinspart3/) |
@@ -60,10 +60,10 @@ normality tests, and influence diagnostics are the
 tools that distinguish a model that happens to work
 from one that is statistically sound.
 
-This post walks through the four classical regression
-assumptions, checks each with both visual and formal
-tests, identifies influential observations, and
-interprets the model coefficients in biological terms.
+We walk through the four classical regression
+assumptions, check each with both visual and formal
+tests, identify influential observations, and
+interpret the model coefficients in biological terms.
 
 ## Motivations
 
@@ -788,31 +788,39 @@ identified a handful of observations exceeding
 standard thresholds, but none materially altered the
 model's coefficients or R-squared.
 
-What I found most reassuring was the stability of the
-results under perturbation. Removing the single most
+Most reassuring is the stability of the results
+under perturbation. Removing the single most
 influential observation changed R-squared by a
-negligible amount, which means our conclusions from
+negligible amount, which means the conclusions from
 Parts 2 and 3 rest on solid statistical foundations
 rather than on the behaviour of a few unusual
 penguins.
 
 For anyone working through a similar diagnostic
-exercise, my main advice is to combine formal tests
-with visual inspection. A significant Shapiro-Wilk
-test at n = 333 does not necessarily invalidate the
-model; the Q-Q plot and histogram provide the context
-needed to judge practical significance.
+exercise, the principal advice is to combine formal
+tests with visual inspection. A significant
+Shapiro-Wilk test at n = 333 does not necessarily
+invalidate the model; the Q-Q plot and histogram
+provide the context needed to judge practical
+significance.
 
-Main takeaways:
-
-- All four classical assumptions are satisfied for
-  the species-aware linear model.
-- No single observation drives the conclusions.
-- Flipper length is the strongest continuous
-  predictor of body mass.
-- Species differences account for substantial
-  variation in body mass beyond what morphometric
-  measurements alone can explain.
+In conclusion, four points merit emphasis. First,
+all four classical regression assumptions (linearity,
+independence, homoscedasticity, and normality) are
+satisfied for the species-aware linear model, lending
+statistical credibility to the coefficients and
+confidence intervals reported in Parts 2 and 3.
+Second, no single observation drives the conclusions:
+sensitivity analysis showed that excluding the most
+influential data point changes R-squared by a
+negligible amount. Third, flipper length is the
+strongest continuous predictor of body mass, a
+finding consistent across all diagnostic
+perspectives. Fourth, species differences account
+for substantial variation in body mass beyond what
+morphometric measurements alone can explain,
+reinforcing the importance of biological context in
+model specification.
 
 # See Also
 
