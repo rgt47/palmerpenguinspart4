@@ -8,7 +8,7 @@ description: >
   Verifying regression model trustworthiness through
   systematic diagnostic checks on linearity, normality,
   and influence.
-image: "media/images/hero.jpg"
+image: "media/images/hero.png"
 document-type: "blog"
 draft: false
 execute:
@@ -24,7 +24,7 @@ cluster-order: 4
 ---
 
 ![Penguins on Antarctic
-shoreline](media/images/hero.jpg){.img-fluid
+shoreline](media/images/hero.png){.img-fluid
 width=80%
 fig-alt="Penguins standing along an Antarctic
 shoreline with waves and rocky terrain in the
