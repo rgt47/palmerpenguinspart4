@@ -10,7 +10,7 @@ description: >
   and influence.
 image: "media/images/hero.png"
 document-type: "blog"
-draft: false
+draft: true
 execute:
   echo: true
   warning: false
@@ -284,7 +284,7 @@ systematic curvature. The linearity assumption
 appears satisfied.
 
 ![Penguins resting on rocks in a
-group](media/images/ambiance2.jpg){.img-fluid
+group](media/images/ambiance2.png){.img-fluid
 fig-alt="Group of penguins resting together on rocks
 near the shoreline"}
 
@@ -678,7 +678,7 @@ useful estimate for field researchers.
    provide a formal check.
 
 ![Penguins in a wide Antarctic
-landscape](media/images/ambiance3.jpg){.img-fluid
+landscape](media/images/ambiance3.png){.img-fluid
 fig-alt="Panoramic view of Antarctic terrain with a
 group of penguins in the foreground"}
 
