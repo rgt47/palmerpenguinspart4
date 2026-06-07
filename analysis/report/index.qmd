@@ -10,7 +10,7 @@ description: >
   and influence.
 image: "media/images/hero.png"
 document-type: "blog"
-draft: true
+draft: false
 execute:
   echo: true
   warning: false
