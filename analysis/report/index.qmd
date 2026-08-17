@@ -1,13 +1,9 @@
 ---
-title: "Palmer Penguins Part 4: Model Diagnostics and
-  Interpretation"
+title: "Palmer Penguins Part 4: Model Diagnostics and Interpretation"
 author: "Ronald G. Thomas"
 date: "2025-01-04"
 categories: [r, regression, model-selection]
-description: >
-  Verifying regression model trustworthiness through
-  systematic diagnostic checks on linearity, normality,
-  and influence.
+description: "Verifying regression model trustworthiness through systematic diagnostic checks on linearity, normality, and influence."
 image: "media/images/hero.png"
 document-type: "blog"
 draft: true
