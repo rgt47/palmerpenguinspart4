@@ -275,10 +275,11 @@ across all three predictors, with no evidence of
 systematic curvature. The linearity assumption
 appears satisfied.
 
-![Penguins resting on rocks in a
-group](media/images/ambiance2.png){.img-fluid
-fig-alt="Group of penguins resting together on rocks
-near the shoreline"}
+![A sheet of graph paper with a hand-drawn scatter of
+points and a ruler resting across it, a small cluster
+circled in pencil](media/images/ambiance2.jpg){.img-fluid
+fig-alt="A held-out subset of points circled on graph
+paper, evaluated against the rest"}
 
 *Midpoint pause before the remaining diagnostics.*
 
