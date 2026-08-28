@@ -23,7 +23,7 @@ shoreline with waves and rocky terrain in the
 background" fig-align="center"}
 
 *Palmer Penguins series, Part 4. Photo used under
-open licence.*
+open license.*
 
 ::: {.callout-note}
 **Palmer Penguins Series:** This is part 4 of 5:
@@ -38,7 +38,7 @@ open licence.*
 
 Is the regression model trustworthy? In Part 3,
 cross-validation confirmed that the species-aware
-linear model generalises well, with a cross-validated
+linear model generalizes well, with a cross-validated
 R-squared of approximately 0.86. But good predictive
 performance does not guarantee that the model's
 assumptions are satisfied. A model can produce
@@ -160,7 +160,7 @@ penguins_diag <- penguins_clean |>
 ```
 
 Each observation now carries its fitted value,
-residual, standardised residual, studentised
+residual, standardized residual, studentized
 residual, leverage, and Cook's distance. These
 quantities form the basis of every diagnostic check
 that follows.
@@ -586,7 +586,7 @@ kable(
 
 Key interpretations:
 
-- **Flipper length:** Each additional millimetre of
+- **Flipper length:** Each additional millimeter of
   flipper length is associated with an increase of
   approximately 15-20 grams in body mass, holding
   other predictors constant.
@@ -661,7 +661,7 @@ useful estimate for field researchers.
 
 4. **Residual patterns by species.** Pooled residual
    plots can mask species-specific violations.
-   Colour-coding by species (as done above) helps
+   Color-coding by species (as done above) helps
    detect group-level issues.
 
 5. **Multicollinearity.** If predictors are highly
@@ -677,7 +677,7 @@ group of penguins in the foreground"}
 
 *Closing visual before the summary sections.*
 
-## Lessons Learnt
+## Lessons Learned
 
 ### Conceptual Understanding
 
@@ -726,10 +726,10 @@ group of penguins in the foreground"}
 - Cook's distance thresholds are guidelines, not
   absolute rules. A value of 4/n flags many
   observations in well-behaved datasets; always
-  combine the threshold with substantive judgement.
+  combine the threshold with substantive judgment.
 - Residual plots can look acceptable in aggregate
   while hiding species-specific problems. Faceting
-  or colouring by group is essential for mixed
+  or coloring by group is essential for mixed
   models.
 
 ## Limitations
@@ -767,7 +767,7 @@ group of penguins in the foreground"}
    coverage.
 5. Implement species-specific diagnostic plots that
    fit separate loess curves within each group.
-6. Explore generalised additive models (GAMs) to
+6. Explore generalized additive models (GAMs) to
    test formally for non-linear relationships
    without committing to polynomial terms.
 
@@ -788,7 +788,7 @@ under perturbation. Removing the single most
 influential observation changed R-squared by a
 negligible amount, which means the conclusions from
 Parts 2 and 3 rest on solid statistical foundations
-rather than on the behaviour of a few unusual
+rather than on the behavior of a few unusual
 penguins.
 
 For anyone working through a similar diagnostic
@@ -880,7 +880,7 @@ Feedback is welcome for:
 - Discussion of model diagnostics or regression
   assumption testing
 - Questions about anything in this tutorial
-- General discussion of statistical modelling for
+- General discussion of statistical modeling for
   ecological data
 
 ## Related posts in this cluster
