@@ -6,7 +6,7 @@ categories: [r, regression, model-selection]
 description: "Verifying regression model trustworthiness through systematic diagnostic checks on linearity, normality, and influence."
 image: "media/images/hero.png"
 document-type: "blog"
-draft: true
+draft: false
 execute:
   echo: true
   warning: false
